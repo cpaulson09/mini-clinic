@@ -85,4 +85,13 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
   }
+  /* Tailwind v4 gives buttons the default arrow. Show the hand on anything clickable. */
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  select:not(:disabled),
+  summary,
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    cursor: pointer;
+  }
 }
