@@ -25,9 +25,11 @@ Other commands: `pnpm test`, `pnpm typecheck`, `pnpm lint`, `pnpm db:seed` (wipe
 ## Architecture
 
 ```
-apps/api/         Hono + tRPC + Drizzle (SQLite)
-apps/web/         React + Vite + TanStack Query + Tailwind + shadcn/ui
-packages/shared/  Zod schemas + pure business rules, used by both apps
+apps/
+	api/         Hono + tRPC + Drizzle (SQLite)
+	web/         React + Vite + TanStack Query + Tailwind + shadcn/ui
+packages/
+	shared/  Zod schemas + pure business rules, used by both apps
 docs/             PLAN.md (every decision) and adr/ (decision records)
 ```
 
